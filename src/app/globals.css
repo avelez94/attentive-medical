@@ -2549,3 +2549,654 @@ main:focus {
     display: none;
   }
 }
+
+/* ==========================================================================
+   Weight Management
+   ========================================================================== */
+
+.jump-nav {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 30;
+  background: rgba(250, 247, 242, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-block: 1px solid var(--line);
+}
+
+.jump-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-block: 10px;
+  scrollbar-width: none;
+}
+
+.jump-nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+.jump-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.jump-nav a:hover {
+  background: var(--cocoa);
+  border-color: var(--cocoa);
+  color: var(--ivory);
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.principle {
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  background: var(--cream);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.principle:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.principle .icon-circle {
+  background: var(--ivory);
+  margin-bottom: 20px;
+}
+
+.principle h3 {
+  font-size: 1.6rem;
+}
+
+.principle p {
+  margin: 0;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+.focus-card {
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: var(--radius);
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.focus-card-muted {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.focus-card h3 {
+  margin-bottom: 0.8em;
+}
+
+.check-list-x svg {
+  color: var(--taupe);
+}
+
+.glp1-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: center;
+}
+
+.glp1-media {
+  position: relative;
+}
+
+.glp1-photo {
+  aspect-ratio: 4 / 4.6;
+  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) 200px;
+}
+
+.glp1-botanical {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 70px;
+}
+
+.note-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 22px 26px;
+  border-radius: var(--radius-sm);
+  background: var(--cream);
+  border-left: 3px solid var(--mocha);
+}
+
+.note-list li {
+  color: var(--ink);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.detail-card {
+  padding: 30px 28px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--line);
+}
+
+.detail-card .icon-circle {
+  margin-bottom: 18px;
+  background: var(--ivory);
+}
+
+.detail-card h3 {
+  font-size: 1.55rem;
+}
+
+@media (max-width: 900px) {
+  .principles,
+  .focus-grid,
+  .details-grid,
+  .glp1-grid {
+    grid-template-columns: 1fr;
+  }
+  .glp1-photo {
+    aspect-ratio: 4 / 3.2;
+  }
+  .glp1-botanical {
+    display: none;
+  }
+}
+
+.glp1-photo.photo-placeholder {
+  justify-content: flex-end;
+}
+
+/* ==========================================================================
+   FAQs
+   ========================================================================== */
+
+.faq-hero .container {
+  position: relative;
+}
+
+.faq-hero-inner {
+  max-width: 760px;
+}
+
+.faq-hero-botanical {
+  position: absolute;
+  right: var(--gutter);
+  top: 20px;
+  width: 140px;
+}
+
+.topic-chips ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.topic-chips a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  background: var(--oat);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s var(--ease);
+}
+
+.topic-chips a:hover {
+  background: var(--cocoa);
+  color: var(--ivory);
+  transform: translateY(-1px);
+}
+
+.faq-groups {
+  padding-top: 24px;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.faq-group {
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
+.faq-group + .faq-group {
+  margin-top: clamp(40px, 5vw, 64px);
+}
+
+.faq-group-title {
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  margin-bottom: 0.6em;
+}
+
+.faq-aside {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  display: grid;
+  gap: 20px;
+}
+
+.aside-card {
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--oat);
+}
+
+.aside-card-plain {
+  background: transparent;
+  border: 1px solid var(--line-strong);
+}
+
+.aside-card .h3 {
+  font-size: 1.55rem;
+}
+
+@media (max-width: 960px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+  .faq-aside {
+    position: static;
+  }
+  .faq-hero-botanical {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+.contact-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: center;
+}
+
+.contact-hero-photo {
+  aspect-ratio: 4 / 3;
+  border-radius: 200px var(--radius-lg) var(--radius-lg) var(--radius-lg);
+}
+
+.contact-paths {
+  padding-top: clamp(32px, 4vw, 56px);
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-card {
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
+.contact-card-feature {
+  background: var(--oat);
+  border-color: transparent;
+}
+
+.contact-card-feature:target {
+  box-shadow: 0 0 0 2px var(--cocoa);
+}
+
+.contact-card .icon-circle {
+  margin-bottom: 18px;
+  background: var(--ivory);
+}
+
+.contact-card .h3 {
+  font-size: 1.7rem;
+}
+
+.contact-list {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list a {
+  color: var(--cocoa);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.how-care-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: center;
+}
+
+.how-care-facts {
+  display: grid;
+  gap: 4px;
+}
+
+.fact {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.fact svg {
+  flex-shrink: 0;
+  color: var(--mocha);
+  margin-top: 4px;
+}
+
+.fact h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.2em;
+}
+
+.fact p {
+  margin: 0;
+}
+
+.how-care-botanical {
+  position: absolute;
+  right: 0;
+  top: -60px;
+  width: 60px;
+}
+
+.privacy-note .h3 {
+  font-size: 2rem;
+}
+
+.emergency {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  background: var(--cream);
+  color: var(--ink);
+}
+
+@media (max-width: 960px) {
+  .contact-hero-grid,
+  .contact-cards,
+  .how-care-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-care-botanical {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Book a Consultation
+   ========================================================================== */
+
+.book-hero {
+  padding-bottom: clamp(24px, 3vw, 40px);
+}
+
+.book-hero .container {
+  position: relative;
+}
+
+.book-hero-inner {
+  max-width: 720px;
+}
+
+.book-botanical {
+  position: absolute;
+  right: var(--gutter);
+  top: 0;
+  width: 130px;
+}
+
+.book-main {
+  padding-bottom: var(--section-y);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+}
+
+.scheduler-card {
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  padding: clamp(12px, 2vw, 24px);
+  min-width: 0;
+}
+
+.scheduler-frame {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--ivory);
+}
+
+.scheduler-frame iframe {
+  display: block;
+  width: 100%;
+  height: clamp(760px, 85vh, 1000px);
+  border: 0;
+}
+
+.scheduler-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: var(--ivory);
+  text-align: center;
+  padding: 24px;
+  z-index: 1;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--sand);
+  border-top-color: var(--cocoa);
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+    border-top-color: var(--sand);
+    background: radial-gradient(circle, var(--cocoa) 4px, transparent 5px);
+  }
+}
+
+.scheduler-fallback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding: 18px 8px 4px;
+}
+
+.scheduler-fallback p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.scheduler-pending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: clamp(40px, 7vw, 88px) clamp(16px, 4vw, 48px);
+  border: 1.5px dashed var(--taupe);
+  border-radius: var(--radius);
+  background: var(--ivory);
+}
+
+.scheduler-pending .icon-circle {
+  margin-bottom: 12px;
+}
+
+.scheduler-pending p {
+  max-width: 52ch;
+}
+
+.book-aside {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--oat);
+}
+
+.book-aside .h3 {
+  font-size: 1.6rem;
+}
+
+.book-facts {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.book-facts li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 0.98rem;
+}
+
+.book-facts svg {
+  flex-shrink: 0;
+  color: var(--mocha);
+  margin-top: 2px;
+}
+
+.book-portal {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.book-portal svg {
+  flex-shrink: 0;
+  color: var(--mocha);
+  margin-top: 4px;
+}
+
+.book-portal h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2em;
+}
+
+.book-portal p {
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 960px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+  .book-aside {
+    position: static;
+  }
+  .book-botanical {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .scheduler-card {
+    padding: 8px;
+    border-radius: var(--radius);
+  }
+  .scheduler-frame iframe {
+    height: 900px;
+  }
+}
+
+/* ---------- Not found ---------- */
+
+.not-found {
+  min-height: 60vh;
+}
+
+.not-found-botanical {
+  width: 90px;
+  margin: 0 auto 24px;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}

@@ -33,6 +33,7 @@ export const site = {
   /** States and districts where care is currently offered. Confirm before launch. */
   serviceAreas: ["Maryland", "Virginia", "Washington, DC"],
   serviceAreaLine: "Virtual care in Maryland, Virginia & DC",
+  serviceAreaSentence: "Maryland, Virginia and Washington, DC",
 
   provider: {
     name: "Ladawana Crawford",

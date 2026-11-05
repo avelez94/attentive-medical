@@ -53,6 +53,13 @@ export function Header() {
     const prev = body.style.overflow;
     body.style.overflow = "hidden";
     const panel = panelRef.current;
+    // Start the panel right below the header, wherever the header sits.
+    const header = panel?.closest(".site-header");
+    const place = () => {
+      if (panel && header) panel.style.top = `${Math.max(0, header.getBoundingClientRect().bottom)}px`;
+    };
+    place();
+    window.addEventListener("resize", place);
     const focusables = () =>
       Array.from(panel?.querySelectorAll<HTMLElement>("a[href], button:not([disabled])") ?? []);
     focusables()[0]?.focus();
@@ -82,6 +89,7 @@ export function Header() {
       body.style.overflow = prev;
       document.removeEventListener("keydown", onKey);
       mq.removeEventListener("change", onMq);
+      window.removeEventListener("resize", place);
     };
   }, [open, close]);
 

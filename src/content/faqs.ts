@@ -20,7 +20,7 @@ export type Faq = {
   pendingNote?: string;
 };
 
-const areas = "Maryland, Virginia and Washington, DC";
+const areas = site.serviceAreaSentence;
 
 export const faqCategories: { id: Faq["category"]; label: string }[] = [
   { id: "visits", label: "Virtual visits" },
