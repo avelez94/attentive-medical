@@ -15,7 +15,12 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: { formats: ["image/avif", "image/webp"] },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    const headers = [...securityHeaders];
+    // Review builds stay out of search results.
+    if (process.env.NEXT_PUBLIC_REVIEW_MODE === "true") {
+      headers.push({ key: "X-Robots-Tag", value: "noindex, nofollow" });
+    }
+    return [{ source: "/:path*", headers }];
   },
 };
 

@@ -100,9 +100,10 @@ Still to do once content and photos arrive:
 
 ## 6. Launch sequence
 
+* [x] Review link approved by the owner: Vercel project `attentive-medical` connected to this repository. Every push to `main` updates https://attentive-medical.vercel.app
+* [x] Vercel environment variables set: `NEXT_PUBLIC_REVIEW_MODE=true` (review notes shown, search engines told not to index) and `NEXT_PUBLIC_SITE_URL=https://attentive-medical.vercel.app`
 * [ ] Practice reviews and approves the finished website
-* [ ] Connect this GitHub repository to Vercel (only after explicit approval)
-* [ ] Set environment variables in Vercel: scheduler, portal and payment URLs, `NEXT_PUBLIC_SITE_URL`, and `NEXT_PUBLIC_REVIEW_MODE` (true for previews, false for production)
+* [ ] Add the scheduler, portal and payment URLs in Vercel once supplied
 * [ ] Final checks on a Vercel preview deployment, including the booking, portal and payment flows
-* [ ] Only after the live launch is explicitly authorized: connect the domain and update DNS. Do not change the existing website, domain or DNS before then.
+* [ ] Only after the live launch is explicitly authorized: set `NEXT_PUBLIC_REVIEW_MODE=false`, set `NEXT_PUBLIC_SITE_URL=https://attentivemedcare.com`, then connect the domain and update DNS. Do not change the existing website, domain or DNS before then.
 * [ ] After launch: confirm the live domain, metadata and search indexing
