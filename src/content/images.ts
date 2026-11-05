@@ -68,15 +68,15 @@ export const images = {
   ),
   homeApproach: unsplash(
     "homeApproach",
-    "1517705008128-361805f42e86",
-    "A white chair beside a small table with a plant and a mug",
+    "1490645935967-10de6ba17061",
+    "A colorful bowl of vegetables, eggs and greens on a wooden table",
     "Warm still life: ceramic mug, notebook, green plant, morning light. Landscape.",
     "center"
   ),
   homeCta: unsplash(
     "homeCta",
-    "1499750310107-5fef28a66643",
-    "A laptop, notebook and coffee mug on a wooden desk",
+    "1587614382346-4ec70e388b28",
+    "A laptop, notebook and reading glasses on a round table",
     "Light wood desk corner, notebook and mug, soft window light. Landscape.",
     "center"
   ),
@@ -89,15 +89,15 @@ export const images = {
   ),
   wmHeroSecondary: unsplash(
     "wmHeroSecondary",
-    "1531384441138-2736e62e0919",
-    "A smiling man in a cap holding a camera",
+    "1566492031773-4f4e44671857",
+    "A thoughtful man in glasses resting his chin on his hand",
     "Man, 40s to 60s, deeper skin tone, outdoors with a daypack, friendly. Portrait.",
-    "center 30%"
+    "center 25%"
   ),
   wmDetail: unsplash(
     "wmDetail",
-    "1455390582262-044cdead277a",
-    "A pen writing in an open notebook",
+    "1584982751601-97dcc096659c",
+    "A stethoscope resting on a white surface",
     "Simple wellness still life: open notebook, pen, glass of water, plant. Landscape.",
     "center"
   ),
@@ -110,29 +110,29 @@ export const images = {
   ),
   hiwHeroSecondary: unsplash(
     "hiwHeroSecondary",
-    "1517842645767-c639042777db",
-    "An open notebook with glasses and a pen",
+    "1505751172876-fa1923c5c528",
+    "A stethoscope on a soft white surface",
     "Close up of notebook and pen on warm wood. Square.",
     "center"
   ),
   hiwStepBook: unsplash(
     "hiwStepBook",
-    "1544787219-7f47ccb76574",
-    "A cup of coffee with cookies on a white table",
+    "1493934558415-9d19f0b2b4d2",
+    "A simple desk with a computer, a plant and a wall calendar",
     "Mug and plants on a table, calm morning light. Landscape.",
-    "center 40%"
+    "center"
   ),
   hiwStepMeet: unsplash(
     "hiwStepMeet",
-    "1566492031773-4f4e44671857",
-    "A thoughtful man in glasses resting his chin on his hand",
+    "1576091160399-112ba8d25d1d",
+    "A clinician in a white coat with a stethoscope using a smartphone",
     "Man, 40s, Asian or Latino, speaking warmly to a laptop at home. Landscape.",
-    "center 25%"
+    "center 40%"
   ),
   hiwStepPlan: unsplash(
     "hiwStepPlan",
-    "1453928582365-b6ad33cbcf64",
-    "A laptop, notepad and coffee on a light wood desk, seen from above",
+    "1547592180-85f173990554",
+    "A balanced plate of grains, vegetables and greens",
     "Notebook with pen, plant, soft shadows. Landscape.",
     "center"
   ),
@@ -159,8 +159,8 @@ export const images = {
   ),
   contactDesk: unsplash(
     "contactDesk",
-    "1493934558415-9d19f0b2b4d2",
-    "A simple desk with a computer, a plant and a wall calendar",
+    "1638202993928-7267aad84c31",
+    "A clinician in a white coat holding a stethoscope",
     "Bright desk with plant and laptop, uncluttered. Landscape.",
     "center"
   ),

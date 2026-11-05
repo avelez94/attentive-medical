@@ -44,11 +44,12 @@ These appear on the site today. Please confirm each one.
 
 All 16 photo slots are listed in `src/content/images.ts`. Each one now has a **temporary** review photo from Unsplash (free to use under the Unsplash License), saved in `public/images/` and marked `temporary: true`. The provider portrait stays a marked placeholder on purpose.
 
-* [x] Temporary photos added for review: Black adults in eight people slots (five women, three men) and warm still lifes in the rest
+* [x] Temporary photos added for review: Black adults as patients in the people slots, plus medical still lifes (stethoscope, white coat, a clinician's hands on a phone) and healthy meals
+* [x] Stock photos of Black women in clinical clothing were left out on purpose, so no model can be mistaken for Dr. Crawford
 * [ ] **Pending:** Practice approves or replaces each temporary photo
 * [ ] Confirm each photographer's name on the Unsplash photo page and record it in `credit` (this session could not open Unsplash photo pages, only the image files; each `sourceUrl` points to the original image)
 * [ ] Several people photos are studio or office portraits. Consider replacing them with warmer lifestyle shots that match the art direction in each slot's `brief` (outdoors, at home, on a video visit)
-* [ ] The How It Works ongoing care photo and the provider page visit photo show conversations at a table. Confirm they cannot be mistaken for the practice's staff, or replace them
+* [ ] The How It Works ongoing care photo and the provider page visit photo show conversations at a table, and the Contact and How It Works photos show clinicians without faces. Confirm none can be mistaken for the practice's staff, or replace them
 * [ ] Confirm no illustrative person could be mistaken for a patient, staff member or Dr. Crawford
 * [ ] **Pending:** Dr. Crawford's actual portrait (never a stock photo)
 
