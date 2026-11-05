@@ -106,7 +106,8 @@ export const site = {
 export const portalBlurb =
   "Access your shared visit information and securely message your provider through Tebra.";
 
-export const bookingInstructions =
-  "Choose an available time to request your consultation. Your appointment is confirmed once the practice approves your request.";
+export const bookingConfirmation = "Your appointment is confirmed once the practice approves your request.";
+
+export const bookingInstructions = `Choose an available time to request your consultation. ${bookingConfirmation}`;
 
 export type Site = typeof site;
