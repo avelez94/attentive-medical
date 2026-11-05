@@ -93,7 +93,7 @@ export function Photo({ slot, className, sizes = "(max-width: 768px) 100vw, 50vw
   if (img.src) {
     return (
       <div className={`photo ${className ?? ""}`}>
-        <Image src={img.src} alt={img.alt} fill sizes={sizes} priority={priority} />
+        <Image src={img.src} alt={img.alt} fill sizes={sizes} priority={priority} style={{ objectPosition: img.position ?? "center" }} />
       </div>
     );
   }

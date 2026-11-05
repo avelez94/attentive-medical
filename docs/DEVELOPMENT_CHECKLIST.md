@@ -42,15 +42,15 @@ These appear on the site today. Please confirm each one.
 
 ## 3. Photography
 
-All 15 photo slots are listed in `src/content/images.ts` with alt text and art direction. They currently show soft placeholders.
+All 16 photo slots are listed in `src/content/images.ts`. Each one now has a **temporary** review photo from Unsplash (free to use under the Unsplash License), saved in `public/images/` and marked `temporary: true`. The provider portrait stays a marked placeholder on purpose.
 
-* [ ] **Pending:** Source appropriately licensed photos for each slot (for example from Unsplash or a paid stock library), or use the practice's own.
-* [ ] Record the credit, license and source URL for each photo in the manifest.
-* [ ] Confirm diverse adult representation across the site: men and women, different skin tones, ages and natural body types.
-* [ ] Confirm no photo is reused and no illustrative person could be mistaken for a patient, staff member or Dr. Crawford.
-* [ ] Optimize each image (about 1600px on the long edge, under 400 KB).
-
-Note: the development environment used to build this site could not reach stock photo sites, so no photos have been downloaded yet.
+* [x] Temporary photos added for review: Black adults in eight people slots (five women, three men) and warm still lifes in the rest
+* [ ] **Pending:** Practice approves or replaces each temporary photo
+* [ ] Confirm each photographer's name on the Unsplash photo page and record it in `credit` (this session could not open Unsplash photo pages, only the image files; each `sourceUrl` points to the original image)
+* [ ] Several people photos are studio or office portraits. Consider replacing them with warmer lifestyle shots that match the art direction in each slot's `brief` (outdoors, at home, on a video visit)
+* [ ] The How It Works ongoing care photo and the provider page visit photo show conversations at a table. Confirm they cannot be mistaken for the practice's staff, or replace them
+* [ ] Confirm no illustrative person could be mistaken for a patient, staff member or Dr. Crawford
+* [ ] **Pending:** Dr. Crawford's actual portrait (never a stock photo)
 
 ## 4. Integrations
 
