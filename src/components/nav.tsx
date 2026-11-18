@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/config/site";
-import { LogoMark } from "./Botanical";
+import wordmark from "../../public/brand/logo-wordmark.png";
+import fullLogo from "../../public/brand/logo-full.png";
 
 export const mainNav = [
   { href: "/weight-management", label: "Weight Management" },
@@ -9,15 +11,15 @@ export const mainNav = [
   { href: "/faqs", label: "FAQs" },
 ];
 
-export function Logo({ onClick }: { onClick?: () => void }) {
+/**
+ * The practice logo. The header uses the horizontal wordmark; the footer
+ * uses the full logo with its gold ring. Source file: assets/brand/.
+ */
+export function Logo({ onClick, variant = "wordmark" }: { onClick?: () => void; variant?: "wordmark" | "full" }) {
+  const img = variant === "full" ? fullLogo : wordmark;
   return (
-    <Link href="/" className="logo" onClick={onClick} aria-label={`${site.name}, home`}>
-      <LogoMark className="logo-mark" />
-      <span className="logo-text">
-        <span className="logo-name">{site.shortName}</span>
-        <span className="logo-descriptor">{site.descriptor}</span>
-      </span>
+    <Link href="/" className={`logo logo-${variant}`} onClick={onClick} aria-label={`${site.name}, home`}>
+      <Image src={img} alt={site.name} priority={variant === "wordmark"} sizes={variant === "full" ? "240px" : "260px"} />
     </Link>
   );
 }
-

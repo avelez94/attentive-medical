@@ -37,7 +37,8 @@ These appear on the site today. Please confirm each one.
 * [ ] **Pending:** How new patients get portal access (`operations.portalAccessSteps`).
 * [ ] **Pending:** Privacy policy and any other legal pages the practice requires (for example a notice of privacy practices). None have been written, because legal text must come from the practice.
 * [ ] **Pending:** Social media links, if any.
-* [ ] **Pending:** Logo files, if the practice has an existing logo. The current mark is a simple botanical line drawing created for this redesign.
+* [x] Practice logo added: horizontal wordmark in the header, full logo with gold ring in the footer, and a browser icon made from the logo's "A" inside a gold ring. Original file kept in `assets/brand/`.
+* [ ] **Pending:** Confirm the browser icon, and supply a vector (SVG) version of the logo if one exists for the sharpest result
 * [ ] Not assumed anywhere on the site: medication shipping, pharmacy relationships, required labs, visit frequency, eligibility criteria, outcomes, testimonials or a guaranteed prescription.
 
 ## 3. Photography

@@ -13,7 +13,7 @@ export function Footer() {
       <Botanical variant="branch" className="footer-botanical" />
       <div className="container footer-grid">
         <div className="footer-brand">
-          <Logo />
+          <Logo variant="full" />
           <p className="footer-tagline">
             Personalized virtual medical weight management with {site.provider.name}, {site.provider.credentials}.
           </p>

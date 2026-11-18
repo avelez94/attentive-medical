@@ -54,6 +54,7 @@ Set `NEXT_PUBLIC_REVIEW_MODE` to `false` (or leave it empty) for the live launch
 | FAQ questions and answers | `src/content/faqs.ts` |
 | Photos, alt text, licenses and credits | `src/content/images.ts` and `public/images/` |
 | Provider portrait | `public/images/` plus `provider.portrait` in `src/config/site.ts` |
+| Practice logo | `public/brand/` (web versions), `assets/brand/` (original), `src/app/icon.png` (browser icon) |
 | Colors, type and layout | `src/app/globals.css` (tokens at the top) |
 
 Integration URLs must use https. Set them in `.env.local` for development and in the Vercel project settings for previews and production. They are public links, not secrets, but keeping them in environment variables lets preview and production use different values.
